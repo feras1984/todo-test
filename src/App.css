@@ -1,5 +1,7 @@
 .App {
   text-align: center;
+  /*background: #282c34;*/
+  padding-bottom: 25px;
 }
 
 .App-logo {
@@ -36,3 +38,22 @@
     transform: rotate(360deg);
   }
 }
+
+.todo-animation-open{
+  transform: scaleY(1);
+  transform-origin: top;
+  transition: transform 0.3s ease-in-out;
+}
+
+.todo-animation-closed{
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: transform 0.3s ease-in-out;
+}
+
+.card{
+  transform: scaleX(1);
+  transform-origin: left;
+  transition: transform 0.3s ease-in-out;
+}
+
